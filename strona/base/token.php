@@ -10,7 +10,7 @@
     @$username = $_SESSION['username'];
     @$token = $_SESSION['token'];
 
-    $sql = "select * from users where username='$username' and token='$token'";
+    $sql = "select * from susers where username='$username' and token='$token'";
     $result = $conn->query($sql);
 
     if($result->num_rows > 0) {
