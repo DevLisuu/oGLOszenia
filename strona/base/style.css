@@ -65,12 +65,12 @@ nav{
 .login{
     background-color: var(--primary-color);
     color: var(--accent-color);
-    padding: 10px 5px 10px 5px;
+    padding: 10px;
 }
 .button{
     background-color: var(--accent-color);
     color: var(--primary-color);
-    padding: 10px 5px 10px 5px;
+    padding: 10px;
 }
 main{
     min-height: calc(100vh - 80px);
