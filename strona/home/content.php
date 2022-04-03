@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur, magna vel ultrices auctor, quam tortor eleifend risus, quis euismod augue urna at nisi. Suspendisse potenti. Mauris elementum venenatis dignissim. Curabitur ultricies tincidunt mi, non fringilla felis bibendum vel. Aenean a nisi nulla. Pellentesque quis odio purus. Phasellus venenatis nulla non velit volutpat ultricies. In finibus nisi sit amet pharetra mollis.

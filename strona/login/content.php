@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <html>
     <p>
-        Prank on aurab    
+        To prank na arabie wariaty
     </p>
 </html>
