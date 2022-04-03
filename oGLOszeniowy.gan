@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="oGLOszeniowy" company="" webLink="http://" view-date="2022-03-15" view-index="0" gantt-divider-location="426" resource-divider-location="300" version="3.2.3230" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="oGLOszeniowy" company="" webLink="http://" view-date="2022-04-04" view-index="0" gantt-divider-location="426" resource-divider-location="300" version="3.2.3230" locale="en_GB">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
+    <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Name" width="243" order="0"/>
         <field id="tpd4" name="Begin date" width="91" order="1"/>
         <field id="tpd5" name="End date" width="91" order="2"/>
+        <option id="taskLabelUp" value="name"/>
         <option id="filter.completedTasks" value="false"/>
     </view>
     <view id="resource-table">
@@ -144,6 +145,8 @@
             <task id="5" name="Zapisywanie sesji" color="#8cb6ce" meeting="false" start="2022-04-01" duration="7" complete="0" thirdDate="2022-03-09" thirdDate-constraint="0" priority="0" expand="true"/>
         </task>
         <task id="7" name="Tydzień 5" color="#8cb6ce" meeting="false" start="2022-04-08" duration="7" complete="0" thirdDate="2022-03-12" thirdDate-constraint="0" expand="true">
+            <task id="10" name="Podstrony informacyjne" color="#8cb6ce" meeting="false" start="2022-04-08" duration="7" complete="0" thirdDate="2022-04-08" thirdDate-constraint="0" expand="true"/>
+            <task id="9" name="Responsywność" color="#8cb6ce" meeting="false" start="2022-04-08" duration="7" complete="0" thirdDate="2022-03-15" thirdDate-constraint="0" expand="true"/>
             <task id="8" name="Podstawowy system ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-08" duration="7" complete="0" thirdDate="2022-03-26" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
