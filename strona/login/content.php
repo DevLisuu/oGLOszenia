@@ -22,7 +22,7 @@
             exit;
         }
 
-        $sql = "select * from users where username='$username' and pass='$pass'";
+        $sql = "select * from susers where username='$username' and pass='$pass'";
         $result = $conn->query($sql);
 
         if($result->num_rows <= 0) {

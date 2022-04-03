@@ -30,7 +30,7 @@
             exit;
         }
 
-        $sql = "select * from users where username='$username'";
+        $sql = "select * from susers where username='$username'";
         $result = $conn->query($sql);
 
         if($result->num_rows > 0) {
@@ -38,13 +38,13 @@
             exit;
         }
 
-        $sql = "select * from users where token='$token'";
+        $sql = "select * from susers where token='$token'";
         do{
             $token = random_int(10000, 9999999);
             $result = $conn->query($sql);
         }while($result->num_rows > 0);
 
-        $sql = "insert into users(username, pass, token) values ('$username', '$pass', '$token')";
+        $sql = "insert into susers(username, pass, token) values ('$username', '$pass', '$token')";
         $conn->query($sql);
 
         header('Location: ../login');
