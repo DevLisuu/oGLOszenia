@@ -31,5 +31,8 @@
         ?>
     </main>
     <footer>Louda © All rights reserved</footer>
+    <script>
+        Notification.requestPermission();
+    </script>
 </body>
 </html>
