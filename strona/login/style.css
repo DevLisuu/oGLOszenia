@@ -62,7 +62,6 @@ nav{
     text-align: center;
 }
 .login{
-    /*font-size: 16px;*/
     background-color: var(--primary-color);
     color: var(--accent-color);
     padding: 10px 5px 10px 5px;
@@ -92,7 +91,7 @@ footer{
     justify-content: space-around;
 }
 .tecza{
-    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    background: linear-gradient(to right, #66f, #09f, #0f0, #f39, #66f);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

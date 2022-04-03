@@ -19,7 +19,7 @@
             <a class="header-element" href="https://youtu.be/6EjK9-WPFXo">O Arabie</a>
             <div class="header-element">
                 <?php
-                    echo('<a class="login" href="login">Zaloguj się</a>')
+                    echo('<a class="login" href="../login">Zaloguj się</a>')
                 ?>
             </div>
         </nav>
