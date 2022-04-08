@@ -62,6 +62,9 @@ nav{
     height: var(--header-height);
     text-align: center;
 }
+.header-element:hover{
+    transform: scale(110%);
+}
 .login{
     background-color: var(--primary-color);
     color: var(--accent-color);
