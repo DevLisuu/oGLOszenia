@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="oGLOszeniowy" company="" webLink="http://" view-date="2022-03-22" view-index="0" gantt-divider-location="426" resource-divider-location="300" version="3.2.3230" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="oGLOszeniowy" company="" webLink="http://" view-date="2022-04-02" view-index="0" gantt-divider-location="426" resource-divider-location="300" version="3.2.3230" locale="en_GB">
     <description/>
     <view zooming-state="default:3" id="gantt-chart">
         <field id="tpd3" name="Name" width="243" order="0"/>
@@ -146,11 +146,12 @@
             <task id="2" name="Rejestrowanie" color="#8cb6ce" meeting="false" start="2022-03-25" duration="7" complete="100" thirdDate="2022-03-25" thirdDate-constraint="0" priority="2" expand="true"/>
             <task id="5" name="Zapisywanie Sesji" color="#8cb6ce" meeting="false" start="2022-04-01" duration="7" complete="100" thirdDate="2022-03-09" thirdDate-constraint="0" priority="0" expand="true"/>
         </task>
-        <task id="7" name="Tydzień 5" color="#8cb6ce" meeting="false" start="2022-04-08" duration="7" complete="0" thirdDate="2022-03-12" thirdDate-constraint="0" expand="true">
-            <task id="10" name="Frontend 2.0" color="#8cb6ce" meeting="false" start="2022-04-08" duration="7" complete="0" thirdDate="2022-04-08" thirdDate-constraint="0" expand="true"/>
-            <task id="9" name="Responsywność Frontendu" color="#8cb6ce" meeting="false" start="2022-04-08" duration="7" complete="0" thirdDate="2022-03-15" thirdDate-constraint="0" priority="2" expand="true"/>
-            <task id="8" name="Podstawowy system ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-08" duration="7" complete="0" thirdDate="2022-03-26" thirdDate-constraint="0" priority="0" expand="true"/>
+        <task id="7" name="Tydzień 5 i 6" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="0" thirdDate="2022-03-12" thirdDate-constraint="0" expand="true">
+            <task id="10" name="Frontend 2.0" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="0" thirdDate="2022-04-08" thirdDate-constraint="0" expand="true"/>
+            <task id="9" name="Responsywność Frontendu" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="0" thirdDate="2022-03-15" thirdDate-constraint="0" priority="2" expand="true"/>
+            <task id="8" name="System ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="0" thirdDate="2022-03-26" thirdDate-constraint="0" priority="0" expand="true"/>
         </task>
+        <task id="13" name="Koniec projektu" color="#8cb6ce" meeting="true" start="2022-04-30" duration="0" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="1" name="Piotrek" function="3" contacts="" phone="">
