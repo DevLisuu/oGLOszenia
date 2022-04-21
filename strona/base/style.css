@@ -6,7 +6,7 @@
 
     --primary-color: var(--light-primary-color);
     --secondary-color: var(--light-secondary-color);
-    --accent-color: #297;
+    --accent-color: #2a1;
     --text-color: #fff;
 }
 *{
@@ -27,7 +27,9 @@ body{
     font-family: Arial;
     font-size: 20px;
     overflow-x: hidden;
-    background-image: url("https://preview.redd.it/0g5pg6g2grd61.png?width=1920&format=png&auto=webp&s=d2bacaee1bb4ba0561e0c8743d629a5f66415bea");
+
+    backdrop-filter: blur(8px);
+    background-image: url("https://www.teahub.io/photos/full/137-1376768_beautiful-green-background-for-pc-beautiful-green-background.jpg");
     background-size: cover;
 }
 header{
@@ -62,8 +64,39 @@ nav{
     height: var(--header-height);
     text-align: center;
 }
+.header-button{
+    height: var(--header-height);
+    text-align: center;
+}
+.tecza{
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: tecza_animacja 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
 .header-element:hover{
     transform: scale(110%);
+}
+.header-button:hover{
+    transform: scale(110%);
+}
+.header-element:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+.header-element:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom center;
 }
 .login{
     background-color: var(--primary-color);
@@ -99,14 +132,7 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
-.tecza{
-    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: tecza_animacja 6s ease-in-out infinite;
-    background-size: 400% 100%;
-}
+
 
 @keyframes tecza_animacja {
     0%, 100%{
