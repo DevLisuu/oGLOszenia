@@ -28,7 +28,7 @@ body{
     font-size: 20px;
     overflow-x: hidden;
 
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(3px);
     background-image: url("https://www.teahub.io/photos/full/137-1376768_beautiful-green-background-for-pc-beautiful-green-background.jpg");
     background-size: cover;
 }
