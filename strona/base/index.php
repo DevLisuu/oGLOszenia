@@ -18,7 +18,7 @@
             <a class="header-element" href="https://youtu.be/6EjK9-WPFXo">Wyszukiwanie</a>
             <a class="header-element" href="https://youtu.be/6EjK9-WPFXo">Masny Ben - Louda</a>
             <a class="header-element" href="https://youtu.be/6EjK9-WPFXo">O Arabie</a>
-            <div class="header-element">
+            <div class="header-button">
                 <?php
                     include('../base/token.php')
                 ?>
@@ -31,8 +31,7 @@
         ?>
     </main>
     <footer>Louda © All rights reserved</footer>
-    <script>
-        Notification.requestPermission();
-    </script>
+
+    <script>Notification.requestPermission();</script>
 </body>
 </html>
