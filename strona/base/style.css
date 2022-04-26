@@ -42,6 +42,7 @@ header{
     user-select: none;
     color: var(--text-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 2px 8px black;
 }
 #lougo{
     height: 100%;
@@ -61,28 +62,13 @@ nav{
     float: right;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-.header-element{
+.header-element, .header-button{
     height: var(--header-height);
     text-align: center;
 }
-.header-button{
-    height: var(--header-height);
-    text-align: center;
-}
-.tecza{
-    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: tecza_animacja 6s ease-in-out infinite;
-    background-size: 400% 100%;
-}
-.header-element:hover{
-    transform: scale(110%);
-}
-.header-button:hover{
+.header-element:hover, .header-button:hover{
     transform: scale(110%);
 }
 .header-element:after{
@@ -100,6 +86,14 @@ nav{
 .header-element:hover:after{
     transform: scaleX(1);
     transform-origin: bottom center;
+}
+.tecza{
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: tecza_animacja 6s ease-in-out infinite;
+    background-size: 400% 100%;
 }
 .login{
     background-color: var(--primary-color);
@@ -133,7 +127,7 @@ footer{
     user-select: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 
@@ -146,18 +140,27 @@ footer{
     }
 }
 
-@media only screen and (max-width: 1650px) {
+@media only screen and (max-width: 1420px) {
     nav{
         width: 65vw;
     }
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1060px) {
     nav{
         width: 75vw;
     }
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 900px) {
     nav{
         display: none;
+    }
+    main{
+        width: 100vw;
+    }
+    footer{
+        width: 100vw;
+    }
+    #lougo{
+        width: 100vw;
     }
 }
