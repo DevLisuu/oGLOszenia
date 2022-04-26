@@ -10,10 +10,6 @@
 
     <?php
         $conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
-        
-        if($conn->connect_error) {
-            exit("Connection failed: " . $conn->connect_error);
-        }
 
         @$username = trim($_POST['username']);
         @$pass = trim($_POST['pass']);
