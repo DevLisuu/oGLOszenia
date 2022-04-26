@@ -9,34 +9,37 @@
     </form>
 
     <?php
-        $conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
-
-        @$username = trim($_POST['username']);
-        @$pass = trim($_POST['pass']);
-
-        if(strlen($username) == 0 || strlen($pass) == 0){
-            exit;
-        }
-
-        $sql = "select * from susers where username='$username' and pass='$pass'";
-        $result = $conn->query($sql);
-
-        if($result->num_rows <= 0) {
-            echo("<p class='red'>Niepoprawne hasło lub nazwa użytkownika.</p>");
-            exit;
-        }
-
-        while($row = $result->fetch_assoc()) {
-            if($row['username'] == $username && $row['pass'] == $pass) {
-                session_start();
-                $_SESSION['username'] = $row['username'];
-                $_SESSION['token'] = $row['token'];
-                
-                header('Location: ../home');
-                exit;
+        function main() {
+            @$username = trim($_POST['username']);
+            @$pass = trim($_POST['pass']);
+            
+            if(strlen($username) == 0 || strlen($pass) == 0){
+                return;
             }
+    
+            $conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+    
+            $sql = "select * from susers where username='$username' and pass='$pass'";
+            $result = $conn->query($sql);
+    
+            if($result->num_rows <= 0) {
+                echo("<p class='red'>Niepoprawne hasło lub nazwa użytkownika.</p>");
+                return;
+            }
+    
+            while($row = $result->fetch_assoc()) {
+                if($row['username'] == $username && $row['pass'] == $pass) {
+                    session_start();
+                    $_SESSION['username'] = $row['username'];
+                    $_SESSION['token'] = $row['token'];
+                    
+                    header('Location: ../home');
+                    return;
+                }
+            }
+    
+            $conn->close();
         }
-
-        $conn->close();
+        main();
     ?>
 </p>
