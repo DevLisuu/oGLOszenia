@@ -1,3 +1,3 @@
 <?php
-    include('../base/index.php')
+    include('../base/index.php');
 ?>
