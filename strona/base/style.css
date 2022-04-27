@@ -42,7 +42,7 @@ header{
     user-select: none;
     color: var(--text-color);
     background-color: var(--accent-color);
-    box-shadow: 0px 2px 8px black;
+    box-shadow: 0px 0px 12px black;
 }
 #lougo{
     height: 100%;
