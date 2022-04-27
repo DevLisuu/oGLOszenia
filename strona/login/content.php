@@ -1,5 +1,6 @@
 <p>
-    <br>
+    <link rel="stylesheet" href="./style.css">
+    
     <p>Nie posiadasz konta? <a class="button" href="../register">Zarejestruj się</a></p>
     <br>
     <form action="./" method="post">

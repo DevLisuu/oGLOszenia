@@ -1,4 +1,6 @@
 <p>
+    <link rel="stylesheet" href="./style.css">
+
     <br>
     <p>Posiadasz już konto? <a class="button" href="../login">Zaloguj się</a></p>
     <br>
