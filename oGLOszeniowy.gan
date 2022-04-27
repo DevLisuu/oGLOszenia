@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="oGLOszeniowy" company="" webLink="http://" view-date="2022-04-07" view-index="0" gantt-divider-location="393" resource-divider-location="300" version="3.2.3230" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="oGLOszeniowy" company="" webLink="http://" view-date="2022-04-05" view-index="0" gantt-divider-location="378" resource-divider-location="300" version="3.2.3230" locale="en_GB">
     <description/>
     <view zooming-state="default:3" id="gantt-chart">
-        <field id="tpd3" name="Name" width="223" order="0"/>
-        <field id="tpd4" name="Begin date" width="85" order="1"/>
-        <field id="tpd5" name="End date" width="84" order="2"/>
+        <field id="tpd3" name="Name" width="214" order="0"/>
+        <field id="tpd4" name="Begin date" width="82" order="1"/>
+        <field id="tpd5" name="End date" width="81" order="2"/>
         <option id="taskLabelUp" value="name"/>
         <option id="taskLabelDown" value="resources"/>
         <option id="filter.completedTasks" value="false"/>
@@ -153,8 +153,8 @@
             <task id="8" name="System ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="50" thirdDate="2022-03-26" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="13" name="Koniec projektu" color="#8cb6ce" meeting="true" start="2022-04-30" duration="0" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true"/>
-        <task id="15" name="Tydzień 7" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="37" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
-            <task id="17" name="Losowanie i Wyszukiwanie ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" priority="3" expand="true"/>
+        <task id="15" name="Tydzień 7" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="50" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
+            <task id="17" name="Losowanie i Wyszukiwanie ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="50" thirdDate="2022-04-22" thirdDate-constraint="0" priority="3" expand="true"/>
             <task id="16" name="Podstrony" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" priority="2" expand="true"/>
             <task id="9" name="Responsywność Frontendu" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="100" thirdDate="2022-03-15" thirdDate-constraint="0" priority="2" expand="true"/>
             <task id="28" name="Animacje Frontendu 2" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="50" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true"/>
