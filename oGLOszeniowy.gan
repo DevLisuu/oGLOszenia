@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="oGLOszeniowy" company="" webLink="http://" view-date="2022-04-05" view-index="0" gantt-divider-location="378" resource-divider-location="300" version="3.2.3230" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="oGLOszeniowy" company="" webLink="http://" view-date="2022-03-21" view-index="2" gantt-divider-location="394" resource-divider-location="300" version="3.2.3230" locale="en_GB">
     <description/>
-    <view zooming-state="default:3" id="gantt-chart">
-        <field id="tpd3" name="Name" width="214" order="0"/>
-        <field id="tpd4" name="Begin date" width="82" order="1"/>
+    <view zooming-state="default:5" id="gantt-chart">
+        <field id="tpd3" name="Name" width="216" order="0"/>
+        <field id="tpd4" name="Begin date" width="81" order="1"/>
         <field id="tpd5" name="End date" width="81" order="2"/>
         <option id="taskLabelUp" value="name"/>
         <option id="taskLabelDown" value="resources"/>
@@ -13,7 +13,7 @@
         <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
-    <calendars>
+    <calendars base-id="pl">
         <day-types>
             <day-type id="0"/>
             <day-type id="1"/>
@@ -135,59 +135,89 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Tydzień 1 &amp; 2" color="#8cb6ce" meeting="false" start="2022-03-09" duration="16" complete="100" thirdDate="2022-04-02" thirdDate-constraint="0" expand="true">
-            <depend id="1" type="2" difference="0" hardness="Strong"/>
-            <task id="4" name="Podstawa Frontendu" color="#8cb6ce" meeting="false" start="2022-03-09" duration="8" complete="100" thirdDate="2022-03-09" thirdDate-constraint="0" priority="2" expand="true"/>
-            <task id="3" name="System Logowania" color="#8cb6ce" meeting="false" start="2022-03-17" duration="8" complete="100" thirdDate="2022-03-09" thirdDate-constraint="0" expand="true"/>
+        <task id="0" name="Początki (tydzień 1 &amp; 2)" color="#8cb6ce" meeting="false" start="2022-03-09" duration="16" complete="100" thirdDate="2022-05-04" thirdDate-constraint="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Rubber"/>
+            <task id="1" name="Podstawowy Layout" color="#8cb6ce" meeting="false" start="2022-03-09" duration="16" complete="100" thirdDate="2022-03-03" thirdDate-constraint="0" priority="2" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="2" name="Podstawowa Baza Danych" color="#8cb6ce" meeting="false" start="2022-03-09" duration="16" complete="100" thirdDate="2022-03-03" thirdDate-constraint="0" expand="true">
+                <depend id="6" type="2" difference="0" hardness="Rubber"/>
+            </task>
         </task>
-        <task id="1" name="Tydzień 3 i 4" color="#8cb6ce" meeting="false" start="2022-03-25" duration="14" complete="100" thirdDate="2022-03-01" thirdDate-constraint="0" expand="true">
-            <depend id="7" type="2" difference="0" hardness="Strong"/>
-            <task id="6" name="System Podstron" color="#8cb6ce" meeting="false" start="2022-03-25" duration="14" complete="100" thirdDate="2022-03-25" thirdDate-constraint="0" priority="2" expand="true"/>
-            <task id="12" name="Animacje Frontendu" color="#8cb6ce" meeting="false" start="2022-03-25" duration="14" complete="100" thirdDate="2022-03-09" thirdDate-constraint="0" priority="0" expand="true"/>
-            <task id="2" name="Rejestrowanie i Sesje" color="#8cb6ce" meeting="false" start="2022-03-25" duration="14" complete="100" thirdDate="2022-03-25" thirdDate-constraint="0" priority="2" expand="true"/>
-            <task id="21" name="Baza danych" color="#8cb6ce" meeting="false" start="2022-03-25" duration="14" complete="100" thirdDate="2022-03-25" thirdDate-constraint="0" priority="2" expand="true"/>
+        <task id="3" name="PHP (tydzień 3)" color="#8cb6ce" meeting="false" start="2022-03-25" duration="7" complete="100" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Rubber"/>
+            <task id="6" name="Logowanie i Rejestrowanie" color="#8cb6ce" meeting="false" start="2022-03-25" duration="7" complete="100" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="7" name="Frontend" color="#8cb6ce" meeting="false" start="2022-03-25" duration="7" complete="100" thirdDate="2022-02-14" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Rubber"/>
+                <depend id="9" type="2" difference="0" hardness="Rubber"/>
+            </task>
         </task>
-        <task id="7" name="Tydzień 5 i 6" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="75" thirdDate="2022-03-12" thirdDate-constraint="0" expand="true">
-            <depend id="15" type="2" difference="0" hardness="Strong"/>
-            <task id="10" name="Frontend 2.0" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="100" thirdDate="2022-04-08" thirdDate-constraint="0" expand="true"/>
-            <task id="8" name="System ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="50" thirdDate="2022-03-26" thirdDate-constraint="0" expand="true"/>
+        <task id="8" name="Podstrony (tydzień 4)" color="#8cb6ce" meeting="false" start="2022-04-01" duration="7" complete="100" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Rubber"/>
+            <task id="9" name="Modularny Frontend" color="#8cb6ce" meeting="false" start="2022-04-01" duration="7" complete="100" thirdDate="2022-02-07" thirdDate-constraint="0" priority="0" expand="true"/>
+            <task id="4" name="System Podstron" color="#8cb6ce" meeting="false" start="2022-04-01" duration="7" complete="100" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Rubber"/>
+            </task>
         </task>
-        <task id="13" name="Koniec projektu" color="#8cb6ce" meeting="true" start="2022-04-30" duration="0" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true"/>
-        <task id="15" name="Tydzień 7" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="50" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
-            <task id="17" name="Losowanie i Wyszukiwanie ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="50" thirdDate="2022-04-22" thirdDate-constraint="0" priority="3" expand="true"/>
-            <task id="16" name="Podstrony" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" priority="2" expand="true"/>
-            <task id="9" name="Responsywność Frontendu" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="100" thirdDate="2022-03-15" thirdDate-constraint="0" priority="2" expand="true"/>
-            <task id="28" name="Animacje Frontendu 2" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="50" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true"/>
+        <task id="10" name="Ogłoszenia (tydzień 5 &amp; 6)" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="50" thirdDate="2022-01-24" thirdDate-constraint="0" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Rubber"/>
+            <task id="12" name="Podstrony" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="50" thirdDate="2022-01-24" thirdDate-constraint="0" priority="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Rubber"/>
+                <depend id="15" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="11" name="System Ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-08" duration="14" complete="50" thirdDate="2022-01-17" thirdDate-constraint="0" priority="2" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Rubber"/>
+                <depend id="18" type="2" difference="0" hardness="Rubber"/>
+                <depend id="19" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="20" name="Koniec Projektu" color="#8cb6ce" meeting="true" start="2022-05-15" duration="0" complete="0" thirdDate="2022-04-08" thirdDate-constraint="0" priority="4" expand="true"/>
+        <task id="13" name="Szlify (tydzień 7)" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="50" thirdDate="2022-01-24" thirdDate-constraint="0" expand="true">
+            <depend id="16" type="2" difference="0" hardness="Rubber"/>
+            <task id="15" name="Responsywność" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="75" thirdDate="2022-01-24" thirdDate-constraint="0" expand="true"/>
+            <task id="14" name="CSS Podstron" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="25" thirdDate="2022-01-24" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="16" name="Dodatki (tydzień 8 &amp; 9)" color="#8cb6ce" meeting="false" start="2022-04-29" duration="14" complete="50" thirdDate="2022-01-17" thirdDate-constraint="0" expand="true">
+            <depend id="20" type="2" difference="0" hardness="Rubber"/>
+            <task id="19" name="Losowanie Ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-29" duration="14" complete="100" thirdDate="2022-03-14" thirdDate-constraint="0" priority="0" expand="true"/>
+            <task id="18" name="Wyszukiwanie Ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-29" duration="14" complete="25" thirdDate="2022-01-17" thirdDate-constraint="0" priority="0" expand="true"/>
+            <task id="17" name="Konta" color="#8cb6ce" meeting="false" start="2022-04-29" duration="14" complete="25" thirdDate="2022-01-17" thirdDate-constraint="0" priority="0" expand="true"/>
         </task>
     </tasks>
     <resources>
-        <resource id="1" name="Piotrek" function="3" contacts="" phone="">
+        <resource id="0" name="Piotrek" function="2" contacts="" phone="">
             <rate name="standard" value="50"/>
         </resource>
-        <resource id="2" name="Dominik" function="1" contacts="" phone="">
+        <resource id="1" name="Dominik" function="1" contacts="" phone="">
             <rate name="standard" value="50"/>
         </resource>
     </resources>
     <allocations>
-        <allocation task-id="4" resource-id="1" function="3" responsible="false" load="100.0"/>
-        <allocation task-id="12" resource-id="1" function="3" responsible="false" load="50.0"/>
-        <allocation task-id="10" resource-id="1" function="3" responsible="false" load="100.0"/>
-        <allocation task-id="16" resource-id="1" function="3" responsible="false" load="100.0"/>
-        <allocation task-id="6" resource-id="1" function="3" responsible="false" load="50.0"/>
-        <allocation task-id="28" resource-id="1" function="3" responsible="false" load="100.0"/>
-        <allocation task-id="21" resource-id="1" function="3" responsible="false" load="50.0"/>
-        <allocation task-id="3" resource-id="2" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="2" resource-id="2" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="8" resource-id="2" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="9" resource-id="2" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="17" resource-id="2" function="1" responsible="false" load="100.0"/>
-        <allocation task-id="21" resource-id="2" function="1" responsible="false" load="50.0"/>
+        <allocation task-id="1" resource-id="0" function="2" responsible="false" load="50.0"/>
+        <allocation task-id="17" resource-id="0" function="2" responsible="true" load="0.0"/>
+        <allocation task-id="14" resource-id="0" function="2" responsible="true" load="50.0"/>
+        <allocation task-id="12" resource-id="0" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="0" function="2" responsible="false" load="50.0"/>
+        <allocation task-id="2" resource-id="1" function="1" responsible="false" load="50.0"/>
+        <allocation task-id="18" resource-id="1" function="1" responsible="false" load="0.0"/>
+        <allocation task-id="17" resource-id="1" function="1" responsible="false" load="0.0"/>
+        <allocation task-id="19" resource-id="1" function="1" responsible="false" load="0.0"/>
+        <allocation task-id="15" resource-id="1" function="1" responsible="true" load="50.0"/>
+        <allocation task-id="11" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="1" function="1" responsible="false" load="50.0"/>
     </allocations>
     <vacations/>
     <previous/>
     <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
     <roles>
         <role id="1" name="Backend"/>
-        <role id="3" name="Frontend"/>
+        <role id="2" name="Frontend"/>
     </roles>
 </project>
