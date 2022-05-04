@@ -1,4 +1,5 @@
-<p><?php
+<p>
+    <?php
     @$id = $_GET['id'];
 
     if(!isset($id)) {

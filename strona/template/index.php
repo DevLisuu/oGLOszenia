@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louda Ogłoszenia</title>
-    <link rel="stylesheet" href="../base/style.css">
+    <link rel="stylesheet" href="../template/style.css">
 </head>
 <body>
     <header>
@@ -18,7 +18,7 @@
             <a class="header-element" href="https://youtu.be/6EjK9-WPFXo">O Stronie</a>
             <div class="header-button">
                 <?php
-                    include('../base/token.php')
+                    include('../template/session.php')
                 ?>
             </div>
         </nav>
