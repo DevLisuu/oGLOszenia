@@ -1,3 +1,6 @@
-<?php
-    include('../base/index.php');
-?>
+<p>
+    <?php
+        session_destroy();
+        header('Location: ../home');
+    ?>
+</p>
