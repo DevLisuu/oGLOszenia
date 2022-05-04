@@ -12,7 +12,7 @@
     $card = $result->fetch_assoc();
     
     echo(
-    '<h2>"'.$card['tytul'].'"</h2>
+    '<h2>'.$card['tytul'].'</h2>
     <p>Autor: '.$card['username'].'<br>Data utworzenia: '.$card['data_dodania']
     .
     "</p><hr><p>"
