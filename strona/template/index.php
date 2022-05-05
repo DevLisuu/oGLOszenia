@@ -16,14 +16,13 @@
             <a class="header-element tecza" href="../random">Losowe ogłoszenie</a>
             <a class="header-element" href="../ogloszenie?id=1">Wyszukiwanie</a>
             <a class="header-element" href="https://youtu.be/6EjK9-WPFXo">O Stronie</a>
-            <div class="header-button">
-                <?php
-                    include('../template/session.php')
-                ?>
-            </div>
+            <?php
+                include('../template/session.php')
+            ?>
         </nav>
     </header>
     <main>
+        <br>
         <?php
             include('./content.php');
         ?>

@@ -1,6 +1,5 @@
-<p>
-    <?php
-        session_destroy();
-        header('Location: ../home');
-    ?>
-</p>
+<?php
+    session_start();
+    session_destroy();
+    header('Location: ../home');
+?>

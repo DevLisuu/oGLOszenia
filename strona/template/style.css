@@ -28,10 +28,9 @@ body{
     font-size: 20px;
     overflow-x: hidden;
 
-    /*
-    -webkit-backdrop-filter: blur(332px);
-    backdrop-filter: blur(3px);
-    */
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+
     background-image: url("https://www.teahub.io/photos/full/137-1376768_beautiful-green-background-for-pc-beautiful-green-background.jpg");
     background-size: cover;
 }
@@ -95,15 +94,27 @@ nav{
     animation: tecza_animacja 6s ease-in-out infinite;
     background-size: 400% 100%;
 }
-.login{
+.button{
+    padding: 0 10px 0 10px;
+    line-height: 2;
+}
+.header-button{
     background-color: var(--primary-color);
     color: var(--accent-color);
-    padding: 10px;
+    padding: 0 10px 0 10px;
+    line-height: 2;
 }
 .button{
     background-color: var(--accent-color);
     color: var(--primary-color);
-    padding: 10px;
+}
+.children-centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-centered{
+    text-align: center;
 }
 main{
     min-height: calc(100vh - 80px);
@@ -113,8 +124,12 @@ main{
     margin-right: auto;
     overflow: hidden;
 }
-main > *{
-    margin: 16px;
+article{
+    height: 100%;
+    width: 100%;
+}
+article > *{
+    margin: 8px;
 }
 footer{
     height: 40px;

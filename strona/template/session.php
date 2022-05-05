@@ -10,8 +10,8 @@
     $result = $conn->query($sql);
 
     if($result->num_rows > 0) {
-        echo('<a class="login" href="../logout">Konto</a>');
+        echo('<a class="header-button" href="../logout">Konto</a>');
     }else{
-        echo('<a class="login" href="../login">Zaloguj się</a>');
+        echo('<a class="header-button" href="../login">Zaloguj się</a>');
     }
 ?>
