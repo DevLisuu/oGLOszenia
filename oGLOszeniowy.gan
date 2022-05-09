@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="oGLOszeniowy" company="" webLink="http://" view-date="2022-03-21" view-index="2" gantt-divider-location="394" resource-divider-location="300" version="3.2.3230" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="oGLOszeniowy" company="" webLink="http://" view-date="2022-03-21" view-index="0" gantt-divider-location="379" resource-divider-location="300" version="3.2.3230" locale="en_GB">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Name" width="216" order="0"/>
-        <field id="tpd4" name="Begin date" width="81" order="1"/>
-        <field id="tpd5" name="End date" width="81" order="2"/>
+        <field id="tpd3" name="Name" width="207" order="0"/>
+        <field id="tpd4" name="Begin date" width="78" order="1"/>
+        <field id="tpd5" name="End date" width="78" order="2"/>
         <option id="taskLabelUp" value="name"/>
         <option id="taskLabelDown" value="resources"/>
         <option id="filter.completedTasks" value="false"/>
@@ -154,7 +154,7 @@
                 <depend id="9" type="2" difference="0" hardness="Rubber"/>
             </task>
         </task>
-        <task id="8" name="Podstrony (tydzień 4)" color="#8cb6ce" meeting="false" start="2022-04-01" duration="7" complete="100" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+        <task id="8" name="Frontend (tydzień 4)" color="#8cb6ce" meeting="false" start="2022-04-01" duration="7" complete="100" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
             <depend id="10" type="2" difference="0" hardness="Rubber"/>
             <task id="9" name="Modularny Frontend" color="#8cb6ce" meeting="false" start="2022-04-01" duration="7" complete="100" thirdDate="2022-02-07" thirdDate-constraint="0" priority="0" expand="true"/>
             <task id="4" name="System Podstron" color="#8cb6ce" meeting="false" start="2022-04-01" duration="7" complete="100" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
@@ -173,12 +173,13 @@
                 <depend id="19" type="2" difference="0" hardness="Rubber"/>
             </task>
         </task>
-        <task id="20" name="Koniec Projektu" color="#8cb6ce" meeting="true" start="2022-05-15" duration="0" complete="0" thirdDate="2022-04-08" thirdDate-constraint="0" priority="4" expand="true"/>
         <task id="13" name="Szlify (tydzień 7)" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="50" thirdDate="2022-01-24" thirdDate-constraint="0" expand="true">
             <depend id="16" type="2" difference="0" hardness="Rubber"/>
+            <depend id="20" type="2" difference="0" hardness="Rubber"/>
             <task id="15" name="Responsywność" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="75" thirdDate="2022-01-24" thirdDate-constraint="0" expand="true"/>
             <task id="14" name="CSS Podstron" color="#8cb6ce" meeting="false" start="2022-04-22" duration="7" complete="25" thirdDate="2022-01-24" thirdDate-constraint="0" expand="true"/>
         </task>
+        <task id="20" name="Koniec Projektu" color="#8cb6ce" meeting="true" start="2022-05-15" duration="0" complete="0" thirdDate="2022-04-08" thirdDate-constraint="0" priority="4" expand="true"/>
         <task id="16" name="Dodatki (tydzień 8 &amp; 9)" color="#8cb6ce" meeting="false" start="2022-04-29" duration="14" complete="50" thirdDate="2022-01-17" thirdDate-constraint="0" expand="true">
             <depend id="20" type="2" difference="0" hardness="Rubber"/>
             <task id="19" name="Losowanie Ogłoszeń" color="#8cb6ce" meeting="false" start="2022-04-29" duration="14" complete="100" thirdDate="2022-03-14" thirdDate-constraint="0" priority="0" expand="true"/>
