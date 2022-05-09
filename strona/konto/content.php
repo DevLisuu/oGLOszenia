@@ -11,7 +11,9 @@
         header('Location: ../home');
     }
 
-    $conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+    @$conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+    
+    if($conn->connect_error) header('Location: ../home');
 
     $sql = "select * from susers where id='$id';";
     $result = $conn->query($sql);

@@ -9,7 +9,7 @@
     /**
      * Wyświetla najnowsze ogłoszenia na stronie
      */
-    $conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+    @$conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
 
     $sql = "select * from ogloszenia join susers on ogloszenia.id_autora = susers.id order by data_dodania limit 10;";
     $result = $conn->query($sql);

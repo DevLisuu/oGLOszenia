@@ -16,7 +16,9 @@
         /**
          * Funkcja rejestrująca użytkownika jeśli warunki są spełnione
          */
-        $conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+        @$conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+        
+        if($conn->connect_error) return;
 
         @$username = trim($_POST['username']);
         @$pass = trim($_POST['pass']);

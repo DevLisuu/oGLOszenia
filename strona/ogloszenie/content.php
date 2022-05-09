@@ -9,8 +9,10 @@
         header('Location: ../home');
     }
 
-    $conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+    @$conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
 
+    if($conn->connect_error) header('Location: ../home');
+    
     $sql = "select * from ogloszenia join susers on ogloszenia.id_autora = susers.id where ogloszenia.id='$id';";
     $result = $conn->query($sql);
     $card = $result->fetch_assoc();

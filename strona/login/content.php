@@ -11,7 +11,7 @@
         <input type="submit" value="Zaloguj się">
     </form>
 
-    <?php
+<?php
     function main() {
         /**
          * Funkcja logująca użytkownika jeśli warunki są spełnione
@@ -29,7 +29,9 @@
             return;
         }
 
-        $conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+        @$conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+
+        if($conn->connect_error) return;
 
         $sql = "select * from susers where username='$username' and pass='$pass'";
         $result = $conn->query($sql);
