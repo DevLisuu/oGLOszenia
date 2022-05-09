@@ -16,7 +16,6 @@
         /**
          * Funkcja logująca użytkownika jeśli warunki są spełnione
          */
-        session_start();
 
         if(isset($_SESSION['username']) || isset($_SESSION['token'])) {
             header('Location: ../home');
