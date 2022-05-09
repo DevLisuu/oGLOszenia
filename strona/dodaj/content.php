@@ -2,12 +2,12 @@
     <p>yyyy ogulem to tego nie zrobilem jeszcze</p>
 
 <?php
-    function main() {
+    function addAnnouncement() {
         /**
          * Dodaje ogłoszenie do bazy danych jeśli warunki są spełnione
          */
 
     }
-    main();
+    addAnnouncement();
 ?>
 </article>

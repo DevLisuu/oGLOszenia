@@ -12,7 +12,7 @@
     </form>
 
 <?php
-    function main() {
+    function loginUser() {
         /**
          * Funkcja logująca użytkownika jeśli warunki są spełnione
          */
@@ -50,6 +50,6 @@
 
         $conn->close();
     }
-    main();
+    loginUser();
 ?>
 </article>

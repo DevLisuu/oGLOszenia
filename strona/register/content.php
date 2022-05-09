@@ -12,7 +12,7 @@
     </form>
 
 <?php
-    function main() {
+    function registerUser() {
         /**
          * Funkcja rejestrująca użytkownika jeśli warunki są spełnione
          */
@@ -56,6 +56,6 @@
 
         $conn->close();
     }
-    main();
+    registerUser();
 ?>
 </article>

@@ -1,5 +1,5 @@
 <?php
-    function main() {
+    function getSession() {
         /**
          * Zamienia przycisk "Zaloguj się" na "Konto" jeżeli użytkownik jest zalogowany
          */
@@ -26,5 +26,5 @@
             echo("<a class='header-button' href='../login'>Zaloguj się</a>");
         }
     }
-    main();
+    getSession();
 ?>

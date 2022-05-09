@@ -6,15 +6,19 @@
 
 
 <?php
-    /**
-     * Wyświetla najnowsze ogłoszenia na stronie
-     */
-    @$conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+    function displayAnnouncements() {
+        /**
+         * Wyświetla najnowsze ogłoszenia na stronie
+         */
+        @$conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
+        if($conn->connect_error) return;
 
-    $sql = "select * from ogloszenia join susers on ogloszenia.id_autora = susers.id order by data_dodania limit 10;";
-    $result = $conn->query($sql);
-    while($ogloszenie = $result->fetch_assoc()) {
-        echo("<p><b>".$ogloszenie['tytul']."</b><br>".$ogloszenie['username']."<br></p>");
+        $sql = "select * from ogloszenia join susers on ogloszenia.id_autora = susers.id order by data_dodania limit 10;";
+        $result = $conn->query($sql);
+        while($ogloszenie = $result->fetch_assoc()) {
+            echo("<p><b>".$ogloszenie['tytul']."</b><br>".$ogloszenie['username']."<br></p>");
+        }
     }
+    displayAnnouncements();
 ?>
 </article>
