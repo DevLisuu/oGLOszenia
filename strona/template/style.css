@@ -39,6 +39,7 @@ body{
 }
 header{
     height: 80px;
+    transition: height 0.25s ease-out;
     position: sticky;
     top: 0;
     user-select: none;
@@ -46,7 +47,7 @@ header{
     background-color: var(--accent-color);
     box-shadow: 0px 0px 12px black;
 }
-#lougo{
+.lougo{
     height: 100%;
     width: 15vw;
     font-size: 32px;
@@ -59,12 +60,14 @@ header{
 nav{
     height: 100%;
     width: 50vw;
+    transition: width 0.25s ease-out;
     font-size: 24px;
     white-space: nowrap;
     float: right;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: row;
 }
 .header-element, .header-button{
     height: var(--header-height);
@@ -169,16 +172,28 @@ footer{
     }
 }
 @media only screen and (max-width: 900px) {
+    .mobile-header{
+        height: 500px;
+    }
     nav{
         display: none;
+        height: 75%;
+        width: 100vw;
+    }
+    .mobile-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .lougo{
+        width: 100vw;
+    }
+    .mobile-lougo{
+        height: 25%;
     }
     main{
         width: 100vw;
     }
     footer{
-        width: 100vw;
-    }
-    #lougo{
         width: 100vw;
     }
 }

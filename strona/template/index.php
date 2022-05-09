@@ -9,26 +9,27 @@
 </head>
 <body>
     <header>
-        <div id="lougo">
-            <a class="header-element" href="../home">Louda</a>
+        <div class='lougo'>
+            <a class='header-element' onClick="toggleMobileNav()">Louda</a>
         </div>
         <nav>
-            <a class="header-element tecza" href="../random">Losowe ogłoszenie</a>
-            <a class="header-element" href="../ogloszenie?id=1">Wyszukiwanie</a>
-            <a class="header-element" href="https://youtu.be/6EjK9-WPFXo">O Stronie</a>
+            <a class='header-element tecza' href='../random'>Losowe ogłoszenie</a>
+            <a class='header-element' href='../home'>Home</a>
+            <a class='header-element' href='../dodaj'>Dodaj ogłoszenie</a>
+            <a class='header-element' href='https://youtu.be/6EjK9-WPFXo'>O nas</a>
             <?php
-                include('../template/session.php')
+                include('../template/session.php');
             ?>
         </nav>
     </header>
     <main>
-        <br>
         <?php
             include('./content.php');
         ?>
     </main>
     <footer>Louda © All rights reserved</footer>
 
-    <script>Notification.requestPermission();</script>
+    <script>Notification.requestPermission()</script>
+    <script src="../template/responsive.js"></script>
 </body>
 </html>
