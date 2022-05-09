@@ -17,6 +17,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
+input{
+    border-radius: 0;
+    border-style: solid;
+}
 button{
     color: var(--accent-color);
     background-color: var(--primary-color);
@@ -28,7 +32,6 @@ body{
     font-size: 20px;
     overflow-x: hidden;
 
-    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 
     background-image: url("https://www.teahub.io/photos/full/137-1376768_beautiful-green-background-for-pc-beautiful-green-background.jpg");
@@ -69,6 +72,7 @@ nav{
 }
 .header-element:hover, .header-button:hover{
     transform: scale(110%);
+    cursor: pointer;
 }
 .header-element:after{
     content: '';
@@ -94,10 +98,6 @@ nav{
     animation: tecza_animacja 6s ease-in-out infinite;
     background-size: 400% 100%;
 }
-.button{
-    padding: 0 10px 0 10px;
-    line-height: 2;
-}
 .header-button{
     background-color: var(--primary-color);
     color: var(--accent-color);
@@ -105,8 +105,11 @@ nav{
     line-height: 2;
 }
 .button{
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+    color: var(--accent-color);
+    border-bottom: 2px dotted var(--accent-color);
+}
+.button:hover{
+    border-bottom-style: solid;
 }
 .children-centered{
     display: flex;

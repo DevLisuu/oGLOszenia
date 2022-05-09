@@ -1,5 +1,8 @@
 <article>
 <?php
+    /**
+     * Wyświetla ogłoszenie z bazy danych
+     */
     @$id = $_GET['id'];
 
     if(!isset($id)) {
@@ -19,6 +22,8 @@
     "</p><hr><p>"
     .
     $card['tresc']
+    .
+    "</p>"
     );
 ?>
 </article>

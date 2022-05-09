@@ -1,4 +1,7 @@
 <?php
+    /**
+     * Zamienia przycisk "Zaloguj się" na "Konto" jeżeli użytkownik jest zalogowany
+     */
     session_start();
 
     $conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
@@ -8,10 +11,12 @@
 
     $sql = "select * from susers where username='$username' and token='$token'";
     $result = $conn->query($sql);
+    $data = $result->fetch_assoc();
 
     if($result->num_rows > 0) {
-        echo('<a class="header-button" href="../logout">Konto</a>');
+        echo("<a class='header-button' href='../konto?id=".$data['id']."'>Konto</a>");
     }else{
-        echo('<a class="header-button" href="../login">Zaloguj się</a>');
+        session_destroy();
+        echo("<a class='header-button' href='../login'>Zaloguj się</a>");
     }
 ?>

@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="./style.css">
 
 <article class="children-centered text-centered">
+    <br>
     <p>Posiadasz już konto?</p>
     <a class="button" href="../login">Zaloguj się</a>
     <br><br>
@@ -10,8 +11,11 @@
         <input type="submit" value="Zarejestruj się">
     </form>
 
-    <?php
+<?php
     function main() {
+        /**
+         * Funkcja rejestrująca użytkownika jeśli warunki są spełnione
+         */
         $conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
 
         @$username = trim($_POST['username']);
@@ -51,5 +55,5 @@
         $conn->close();
     }
     main();
-    ?>
+?>
 </article>

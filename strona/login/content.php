@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="./style.css">
 
 <article class="children-centered text-centered">
+    <br>
     <p>Nie posiadasz konta?</p>
     <a class="button" href="../register">Zarejestruj się</a>
     <br><br>
@@ -12,6 +13,15 @@
 
     <?php
     function main() {
+        /**
+         * Funkcja logująca użytkownika jeśli warunki są spełnione
+         */
+        session_start();
+
+        if(isset($_SESSION['username']) || isset($_SESSION['token'])) {
+            header('Location: ../home');
+        }
+
         @$username = trim($_POST['username']);
         @$pass = trim($_POST['pass']);
         
@@ -31,7 +41,6 @@
 
         $firstResult = $result->fetch_assoc();
         
-        session_start();
         $_SESSION['username'] = $firstResult['username'];
         $_SESSION['token'] = $firstResult['token'];
         
