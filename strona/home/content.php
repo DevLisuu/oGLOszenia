@@ -1,8 +1,8 @@
-<article>
-<p>
-    <b>Serwis ogłoszeniowy</b> - typ serwisu internetowego, pozwalający na zamieszczanie ogłoszeń i ich przeglądanie, a przez to kojarzenie stron transakcji (kupującego ze sprzedającym). Ogłoszeniodawcy zwykle zamieszczają przedmioty w odpowiednich kategoriach, co ułatwia kupującym znalezienie danego przedmiotu. Szczególnym rodzajem serwisów ogłoszeniowych są serwisy aukcyjne.
-    <br><br><br>
+<article class="children-centered children-text-centered">
+<p class="text-centered">
+    LoudAds to darmowe ogłoszenia lokalne w kategoriach:<br> Moda, Zwierzęta, Dla Dzieci, Sport i Hobby, Muzyka i Edukacja.<br> Szybko znajdziesz tu ciekawe ogłoszenia i łatwo skontaktujesz się z ogłoszeniodawcą.<br> Na LoudAds czeka na Ciebie praca biurowa, mieszkania, pokoje, samochody.<br> Jeśli chcesz coś sprzedać - w prosty sposób dodasz bezpłatne ogłoszenia.<br> Chcesz coś kupić - tutaj znajdziesz ciekawe okazje, taniej niż w sklepie.<br> Sprzedawaj po sąsiedzku na LoudAds
 </p>
+<br>
 
 
 <?php

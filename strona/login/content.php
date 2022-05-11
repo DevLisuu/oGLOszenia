@@ -1,15 +1,15 @@
 <link rel="stylesheet" href="./style.css">
 
 <article class="children-centered text-centered">
-    <br>
-    <p>Nie posiadasz konta?</p>
-    <a class="button" href="../register">Zarejestruj się</a>
-    <br><br>
-    <form action="./" method="post">
-        Nazwa użytkownika:<br><input type="text" name="username"><br>
-        Hasło:<br><input type="password" name="pass"><br>
-        <input type="submit" value="Zaloguj się">
-    </form>
+<p>Nie posiadasz konta?</p>
+<a class="button" href="../register">Zarejestruj się</a>
+<br><br>
+<form action="./" method="post">
+    <label>Nazwa użytkownika:</label><br><input type="text" name="username"><br>
+    <label>Hasło:</label><br><input type="password" name="pass"><br>
+    <input type="submit" value="Zaloguj się">
+</form>
+<br>
 
 <?php
     function loginUser() {

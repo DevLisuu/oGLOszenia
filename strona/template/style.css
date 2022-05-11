@@ -2,7 +2,7 @@
     --dark-primary-color: #121212;
     --dark-secondary-color: #1e1e1e;
     --light-primary-color: #fff;
-    --light-secondary-color: #eee;
+    --light-secondary-color: #3361;
 
     --primary-color: var(--light-primary-color);
     --secondary-color: var(--light-secondary-color);
@@ -21,6 +21,9 @@ input{
     border-radius: 0;
     border-style: solid;
 }
+label{
+    line-height: 2;
+}
 button{
     color: var(--accent-color);
     background-color: var(--primary-color);
@@ -32,12 +35,11 @@ body{
     font-size: 20px;
     overflow-x: hidden;
 
-    backdrop-filter: blur(4px);
-
-    background-image: url("https://www.teahub.io/photos/full/137-1376768_beautiful-green-background-for-pc-beautiful-green-background.jpg");
+    background-color: var(--secondary-color);
     background-size: cover;
 }
 header{
+    width: 100vw;
     height: 80px;
     transition: height 0.25s ease-out;
     position: sticky;
@@ -49,7 +51,7 @@ header{
 }
 .lougo{
     height: 100%;
-    width: 15vw;
+    width: 25vw;
     font-size: 32px;
     font-weight: bold;
     float: left;
@@ -59,7 +61,7 @@ header{
 }
 nav{
     height: 100%;
-    width: 50vw;
+    width: 55vw;
     transition: width 0.25s ease-out;
     font-size: 24px;
     white-space: nowrap;
@@ -84,7 +86,7 @@ nav{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color: var(--primary-color);
     transition: transform 0.25s ease-out;
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -122,9 +124,12 @@ nav{
 .text-centered{
     text-align: center;
 }
+.children-text-centered > *{
+    text-align: center;
+}
 main{
     min-height: calc(100vh - 80px);
-    width: 70vw;
+    width: 50vw;
     background-color: var(--primary-color);
     margin-left: auto;
     margin-right: auto;
@@ -133,13 +138,11 @@ main{
 article{
     height: 100%;
     width: 100%;
-}
-article > *{
-    margin: 8px;
+    padding: 24px 32px;
 }
 footer{
     height: 40px;
-    width: 70vw;
+    width: 100vw;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--accent-color);
@@ -161,17 +164,22 @@ footer{
     }
 }
 
-@media only screen and (max-width: 1420px) {
+@media only screen and (max-width: 1550px) {
+    nav{
+        width: 55vw;
+    }
+}
+@media only screen and (max-width: 1400px) {
     nav{
         width: 65vw;
     }
 }
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1200px) {
     nav{
-        width: 75vw;
+        width: 74vw;
     }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
     .mobile-header{
         height: 500px;
     }

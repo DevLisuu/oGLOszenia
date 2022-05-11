@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoudAds Ogłoszenia</title>
+    <title>LoudAds - ogłoszenia</title>
     <link rel="stylesheet" href="../template/style.css">
 </head>
 <body>
@@ -14,9 +14,8 @@
         </div>
         <nav>
             <a class='header-element tecza' href='../random'>Losowe ogłoszenie</a>
-            <a class='header-element' href='../home'>Home</a>
+            <a class='header-element' href='../home'>Strona Główna</a>
             <a class='header-element' href='../dodaj'>Dodaj ogłoszenie</a>
-            <a class='header-element' href='../o nas'>O nas</a>
             <?php
                 include('../template/session.php');
             ?>
@@ -27,7 +26,7 @@
             include('./content.php');
         ?>
     </main>
-    <footer>Louda © All rights reserved</footer>
+    <footer>Louda © No rights reserved</footer>
 
     <script>Notification.requestPermission()</script>
     <script src="../template/responsive.js"></script>
