@@ -5,8 +5,8 @@
 <a class="button" href="../login">Zaloguj się</a>
 <br><br>
 <form action="./" method="post">
-    <label>Nazwa użytkownika:</label><br><input type="text" name="username"><br>
-    <label>Hasło:</label><br><input type="password" name="pass"><br>
+    <label>Nazwa użytkownika:</label><br><input type="text" maxlength="16" minlength="8" pattern="[a-zA-Z0-9]+" name="username"><br>
+    <label>Hasło:</label><br><input type="password" maxlength="32" minlength="8" pattern="[a-zA-Z0-9]+" name="pass"><br>
     <input type="submit" value="Zarejestruj się">
 </form>
 <br>
@@ -15,6 +15,7 @@
     function registerUser() {
         /**
          * Funkcja rejestrująca użytkownika jeśli warunki są spełnione
+         * @author Dominik Marszał
          */
         @$conn = new mysqli('localhost', 'root', '', 'ogloszeniowy');
         
@@ -26,20 +27,12 @@
         if(strlen($username) == 0 || strlen($pass) == 0){
             return;
         }
-        if(strlen($username) < 8 || strlen($username) > 32) {
-            echo("<p class='red'>Nazwa użytkownika musi mieć znajdować się w zakresie od 8 do 32 znaków.</p>");
-            return;
-        }
-        if(strlen($pass) < 8 || strlen($pass) > 32) {
-            echo("<p class='red'>Hasło musi mieć znajdować się w zakresie od 8 do 32 znaków.</p>");
-            return;
-        }
 
         $sql = "select * from susers where username='$username'";
         $result = $conn->query($sql);
 
         if($result->num_rows > 0) {
-            echo("Taki użytkownik już istnieje");
+            echo("<p class='red'>Taki użytkownik już istnieje</p>");
             return;
         }
 

@@ -1,9 +1,11 @@
 <article>
-
+<a class="button" href="../logout">Wyloguj się</a>
+<br><br>
 
 <?php
     /**
      * Wyświetla dane i ogłoszenia danego użytkownika
+     * @author Dominik Marszał
      */
     @$id = $_GET['id'];
 
@@ -27,7 +29,16 @@
     "<h2>".$data['username']."</h2>
     <p>Data utworzenia konta: ".$data['data_utworzenia']
     .
-    "</p><hr><p>Ogłoszenia użytkownika ".$data['username'].":<br></p>"
+    "</p><hr><br><h4>Ogłoszenia użytkownika ".$data['username'].":<br></h4>"
     );
+
+    $sql = "select ogloszenia.id, ogloszenia.tytul, susers.username from ogloszenia join susers on ogloszenia.id_autora = susers.id where susers.id='$id' order by ogloszenia.data_dodania desc limit 5;";
+    $result = $conn->query($sql);
+    
+    while($ogloszenie = $result->fetch_array(MYSQLI_ASSOC)) {
+        echo("<a class='button' href='../ogloszenie?id=".$ogloszenie['id']."'>".$ogloszenie['tytul']." by ".$ogloszenie['username']."<br></a>");
+    }
+    
+    $conn->close();
 ?>
 </article>

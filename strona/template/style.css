@@ -2,7 +2,7 @@
     --dark-primary-color: #121212;
     --dark-secondary-color: #1e1e1e;
     --light-primary-color: #fff;
-    --light-secondary-color: #3361;
+    --light-secondary-color: #eee;
 
     --primary-color: var(--light-primary-color);
     --secondary-color: var(--light-secondary-color);
@@ -17,9 +17,27 @@ a{
     text-decoration: none;
     color: inherit;
 }
-input{
+input, textarea{
     border-radius: 0;
+    border-width: 1px;
     border-style: solid;
+}
+input[type=submit]{
+    background-color: green;
+    border-style: solid;
+    border-color: green;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    line-height: 2;
+    margin: 8px;
+    text-align: center;
+}
+input[type=submit]:hover{
+    background-color: white;
+    color: green;
+    cursor: pointer;
 }
 label{
     line-height: 2;
@@ -70,6 +88,7 @@ nav{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+    overflow: hidden;
 }
 .header-element, .header-button{
     height: var(--header-height);
@@ -112,6 +131,7 @@ nav{
 .button{
     color: var(--accent-color);
     border-bottom: 2px dotted var(--accent-color);
+    line-height: 2;
 }
 .button:hover{
     border-bottom-style: solid;
@@ -176,10 +196,10 @@ footer{
 }
 @media only screen and (max-width: 1200px) {
     nav{
-        width: 74vw;
+        width: 70vw;
     }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1050px) {
     .mobile-header{
         height: 500px;
     }

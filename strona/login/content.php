@@ -15,6 +15,7 @@
     function loginUser() {
         /**
          * Funkcja logująca użytkownika jeśli warunki są spełnione
+         * @author Dominik Marszał
          */
 
         if(isset($_SESSION['username']) || isset($_SESSION['token'])) {

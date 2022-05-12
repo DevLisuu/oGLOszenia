@@ -11,5 +11,7 @@
     if($firstResult->num_rows < 1) header('Location: ../home');
     
     header('Location: ../ogloszenie?id='.$firstResult['id']);
+
+    $conn->close();
     ?>
 </p>

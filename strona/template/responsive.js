@@ -1,6 +1,7 @@
 function toggleMobileNav() {
     /**
      * Dodaje specjalną klase do headera aby pozwolić na korzystanie z navbara na wąskich urządzeniach
+     * @author Dominik Marszał
      */
     const header = document.querySelector('header');
     const headerSpecialClass = 'mobile-header';

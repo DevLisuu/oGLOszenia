@@ -1,0 +1,9 @@
+input[name="tytul"]{
+    width: 100%;
+    font-size: 1em;
+}
+textarea[name="tresc"]{
+    width: 100%;
+    resize: vertical;
+    overflow: auto;  
+}

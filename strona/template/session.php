@@ -2,6 +2,7 @@
     function getSession() {
         /**
          * Zamienia przycisk "Zaloguj się" na "Konto" jeżeli użytkownik jest zalogowany
+         * @author Dominik Marszał
          */
         session_start();
 
@@ -22,9 +23,10 @@
         if($result->num_rows > 0) {
             echo("<a class='header-button' href='../konto?id=".$data['id']."'>Konto</a>");
         }else {
-            session_destroy();
             echo("<a class='header-button' href='../login'>Zaloguj się</a>");
         }
+
+        $conn->close();
     }
     getSession();
 ?>

@@ -2,6 +2,7 @@
 <?php
     /**
      * Wyświetla ogłoszenie z bazy danych
+     * @author Dominik Marszał
      */
     @$id = $_GET['id'];
 
@@ -15,6 +16,11 @@
     
     $sql = "select * from ogloszenia join susers on ogloszenia.id_autora = susers.id where ogloszenia.id='$id';";
     $result = $conn->query($sql);
+
+    if($result->num_rows < 1) {
+        header('Location: ../home');
+    }
+
     $card = $result->fetch_assoc();
 
     echo(
@@ -27,5 +33,7 @@
     .
     "</p>"
     );
+    
+    $conn->close();
 ?>
 </article>
